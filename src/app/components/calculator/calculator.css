@@ -1,0 +1,72 @@
+.calculator-form {
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+input[type="number"] {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+}
+
+input[type="number"]:focus {
+  outline: 2px solid #00c2ff;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.btn-reset,
+.btn-submit {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-reset {
+  background-color: #444;
+  color: #eee;
+}
+
+.btn-reset:hover {
+  background-color: #555;
+}
+
+.btn-submit {
+  background-color: #00c2ff;
+  color: #000;
+  font-weight: bold;
+}
+
+.btn-submit:hover {
+  background-color: #00a0d1;
+}

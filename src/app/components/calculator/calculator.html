@@ -1,0 +1,28 @@
+<div class="calculator-form">
+  <form (ngSubmit)="onCalculate()">
+    <div class="form-group">
+      <label for="currentSavings">Current Savings ($)</label>
+      <input type="number" [(ngModel)]="currentSavings"  id="currentSavings" name="currentSavings" required>
+    </div>
+
+    <div class="form-group">
+      <label for="yearlyContribution">Yearly Contribution ($)</label>
+      <input type="number" [(ngModel)]="yearlyContribution"  id="yearlyContribution" name="yearlyContribution" required>
+    </div>
+
+    <div class="form-group">
+      <label for="expectedReturn">Expected Interest (%, per year)</label>
+      <input type="number"  [(ngModel)]="expectedReturn"  id="expectedReturn" name="expectedReturn" step="0.1" required>
+    </div>
+
+    <div class="form-group">
+      <label for="duration">Investment Duration (years)</label>
+      <input type="number"  [(ngModel)]="duration"  id="duration" name="duration" required>
+    </div>
+
+    <div class="form-actions">
+      <button type="reset" (click)="onReset()" class="btn-reset">Reset</button>
+      <button type="submit" class="btn-submit">Calculate</button>
+    </div>
+  </form>
+</div>
