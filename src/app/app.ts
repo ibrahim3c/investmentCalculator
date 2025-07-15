@@ -6,9 +6,9 @@ import { InvestmentResult } from "./components/investment-result/investment-resu
 
 @Component({
   selector: 'app-root',
-  imports: [Header, Calculator, InvestmentResult],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
+  standalone:false
 })
 export class App {
 showResult:boolean=false;

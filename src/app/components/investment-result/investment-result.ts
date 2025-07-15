@@ -8,9 +8,9 @@ import { InvestmentService } from '../../services/investmentService';
 
 @Component({
   selector: 'app-investment-result',
-  imports: [CommonModule],
   templateUrl: './investment-result.html',
-  styleUrl: './investment-result.css'
+  styleUrl: './investment-result.css',
+  standalone:false
 })
 export class InvestmentResult implements OnChanges {
  @Input() investment!:investment

@@ -5,9 +5,9 @@ import { Output } from '@angular/core';
 
 @Component({
   selector: 'app-calculator',
-  imports: [FormsModule],
   templateUrl: './calculator.html',
-  styleUrl: './calculator.css'
+  styleUrl: './calculator.css',
+  standalone:false
 })
 export class Calculator {
   currentSavings?:number;
